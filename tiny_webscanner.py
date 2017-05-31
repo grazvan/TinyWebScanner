@@ -272,10 +272,6 @@ def demo(host):
     host = urlparse.urljoin(host, '/mutillidae/index.php?page=dns-lookup.php')
     exploit_all(host, cookie=cookie)
 
-    print('\n [*] Testing Mutillidae dns-lookup.php')
-    host = urlparse.urljoin(host, '/mutillidae/index.php?page=dns-lookup.php')
-    exploit_all(host, cookie=cookie)
-
     print('\n [*] Testing Mutillidae arbitrary-file-inclusion.php')
     host = urlparse.urljoin(host, '/mutillidae/index.php?page=arbitrary-file-inclusion.php')
     exploit_all(host, cookie=cookie)
